@@ -1,6 +1,6 @@
 <template>
-  <el-container>
-    <div class="rp-navigation">
+  <div class="rp-navigation">
+    <el-container>
       <div class="rp-logo">
         <span></span>
         <p>Logo</p>
@@ -10,20 +10,20 @@
         <li>Link 2</li>
         <li>Link 3</li>
       </ul>
-    </div>
-  </el-container>
+    </el-container>
+  </div>
 </template>
 
 <script>
 export default {
   name: 'Navigation',
-  data() {
-    return {};
+  data () {
+    return {}
   },
   computed: {},
-  created() {},
-  methods: {},
-};
+  created () {},
+  methods: {}
+}
 </script>
 
 <style scoped lang="scss">
@@ -35,8 +35,11 @@ export default {
   left: 0;
   background: transparent;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+
+  .el-container {
+    justify-content: space-between;
+  }
 
   .rp-logo {
     display: flex;

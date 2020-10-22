@@ -5,15 +5,15 @@
 <script>
 export default {
   name: 'AppLayout',
-  data() {
+  data () {
     return {
-      navOpen: false,
-    };
+      navOpen: false
+    }
   },
   computed: {},
-  created() {},
-  methods: {},
-};
+  created () {},
+  methods: {}
+}
 </script>
 
 <style scoped lang="scss">

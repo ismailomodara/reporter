@@ -7,15 +7,15 @@
 <script>
 export default {
   name: 'App',
-  data() {
-    return {};
+  data () {
+    return {}
   },
   computed: {
-    layout() {
-      return `${this.$route.meta.layout || 'default'}-layout`;
-    },
-  },
-};
+    layout () {
+      return `${this.$route.meta.layout || 'default'}-layout`
+    }
+  }
+}
 </script>
 
 <style scoped lang="scss"></style>

@@ -1,32 +1,34 @@
-import Vue from 'vue';
-import VueRouter from 'vue-router';
+import Vue from 'vue'
+import VueRouter from 'vue-router'
 
-const Home = () => import('../pages/index.vue');
-const Login = () => import('../pages/login.vue');
+// const Home = () => import('~/pages/index.vue')
+const Login = () => import('@/pages/login.vue')
 
-Vue.use(VueRouter);
+const ReportForm = () => import('@/pages/report.vue')
+
+Vue.use(VueRouter)
 
 const routes = [
   {
     path: '/',
-    component: Home,
+    component: ReportForm,
     meta: {
-      guest: true,
-    },
+      guest: true
+    }
   },
   {
     path: '/login',
     name: 'login',
     component: Login,
     meta: {
-      guest: true,
-    },
-  },
-];
+      guest: true
+    }
+  }
+]
 
 const router = new VueRouter({
   mode: 'history',
-  routes,
-});
+  routes
+})
 
-export default router;
+export default router

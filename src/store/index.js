@@ -1,16 +1,16 @@
-import Vue from 'vue';
-import Vuex from 'vuex';
-import auth from './modules/auth';
+import Vue from 'vue'
+import Vuex from 'vuex'
+import auth from './modules/auth'
 
-Vue.use(Vuex);
+Vue.use(Vuex)
 
-const ifInProduction = process.env.NODE_ENV === 'production';
+const ifInProduction = process.env.NODE_ENV === 'production'
 
 const store = new Vuex.Store({
   modules: {
-    auth,
+    auth
   },
-  strict: ifInProduction,
-});
+  strict: ifInProduction
+})
 
-export default store;
+export default store

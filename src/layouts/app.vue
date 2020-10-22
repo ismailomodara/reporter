@@ -50,45 +50,45 @@
 </template>
 
 <script>
-import * as actions from '../store/action-types';
-import Navigation from '../components/Base/Navigation';
+import * as actions from '../store/action-types'
+import Navigation from '../components/Base/Navigation'
 
 export default {
   name: 'AppLayout',
   components: {
-    Navigation,
+    Navigation
   },
-  data() {
+  data () {
     return {
-      navOpen: false,
-    };
+      navOpen: false
+    }
   },
   computed: {
-    userName() {
-      const { user } = this.$store.getters;
-      return (`${user.first_name} ${user.last_name}`) || 'Admin';
+    userName () {
+      const { user } = this.$store.getters
+      return (`${user.first_name} ${user.last_name}`) || 'Admin'
     },
-    avatar() {
-      return this.$store.getters.user.avatar;
-    },
+    avatar () {
+      return this.$store.getters.user.avatar
+    }
   },
-  created() {},
+  created () {},
   methods: {
-    command(command) {
+    command (command) {
       if (command === 'settings') {
-        this.$router.push({ name: 'settings.index' });
+        this.$router.push({ name: 'settings.index' })
       } else {
-        this.logOut();
+        this.logOut()
       }
     },
-    logOut() {
+    logOut () {
       this.$store.dispatch(actions.LOGOUT).then(() => {
-        this.$message.success('You are logged out.');
-      });
-      this.$router.push({ name: 'login' });
-    },
-  },
-};
+        this.$message.success('You are logged out.')
+      })
+      this.$router.push({ name: 'login' })
+    }
+  }
+}
 </script>
 
 <style scoped lang="scss">

@@ -40,6 +40,45 @@ a, a:hover {
   cursor: pointer;
 }
 
+
+/*
+ ** Layouts
+ */
+
+.el-container {
+  margin: auto;
+}
+
+@media (min-width: 576px) {
+  .el-container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .el-container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .el-container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .el-container {
+    max-width: 1140px;
+  }
+}
+
+@media (max-width: 576px) {
+  .el-container {
+    max-width: 100%;
+  }
+}
+
 .w-100 {
   width: 100%;
 }
