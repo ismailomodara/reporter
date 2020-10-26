@@ -63,4 +63,16 @@ export default {
     margin: auto;
     padding: 60px 0;
   }
+
+  @media (max-width: 1024px) {
+    .el-form {
+      width: 60%;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .el-form {
+      width: 90%;
+    }
+  }
 </style>

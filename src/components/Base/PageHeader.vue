@@ -69,4 +69,16 @@ export default {
     }
   }
 }
+
+  @media (max-width: 600px) {
+    .page-header {
+      h1 {
+        font-size: 2.5rem !important
+      }
+
+      p {
+        font-size: 1rem !important
+      }
+    }
+  }
 </style>

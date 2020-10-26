@@ -215,4 +215,10 @@ export default {
 .fade-leave-active {
   opacity: 0;
 }
+
+@media (max-width: 600px) {
+  .el-menu-item span {
+    display: none;
+  }
+}
 </style>

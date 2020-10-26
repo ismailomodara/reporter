@@ -10,7 +10,7 @@
             <el-row type="flex" :gutter="80" class="flex-wrap">
               <el-col :md="8" :lg="8">
                 <div class="is-flex is-justify-center is-align-center h-100">
-                  <avatar :size="160" />
+                  <avatar :size="120" />
                 </div>
               </el-col>
               <el-col :md="16" :lg="16">

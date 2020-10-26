@@ -4,7 +4,7 @@
     <el-container>
       <el-form :model="form" ref="reportForm">
         <el-row type="flex" :gutter="20" class="flex-wrap">
-          <el-col :md="9" :lg="9">
+          <el-col :sm="24" :md="9" :lg="9">
             <el-form-item
               label="State of arrest"
               prop="state_of_arrest"
@@ -46,7 +46,7 @@
           </el-col>
         </el-row>
         <el-row type="flex" :gutter="20" class="flex-wrap">
-          <el-col :md="16" :lg="16">
+          <el-col :sm="24" :md="16" :lg="16">
             <el-form-item
               label="Place of arrest"
               prop="place_of_arrest"
@@ -56,7 +56,7 @@
               />
             </el-form-item>
           </el-col>
-          <el-col :md="8" :lg="8">
+          <el-col :sm="24" :md="8" :lg="8">
             <el-form-item
               label="Date of arrest"
               prop="date_of_arrest"
@@ -72,7 +72,7 @@
           </el-col>
         </el-row>
         <el-row type="flex" :gutter="20" class="flex-wrap">
-          <el-col :md="7" :lg="7">
+          <el-col :sm="24" :md="7" :lg="7">
             <el-form-item
               label="No. of arrested"
               prop="number_of_arrested"
@@ -83,7 +83,7 @@
               />
             </el-form-item>
           </el-col>
-          <el-col :md="17" :lg="17">
+          <el-col :sm="24" :md="17" :lg="17">
             <el-form-item
               label="Names of arrested (Ade Ola, John Ayomi)"
               prop="names_of_arrested"
@@ -176,5 +176,18 @@ export default {
     width: 70%;
     margin: auto;
     padding: 80px 30px;
+  }
+
+  @media (max-width: 1024px) {
+    .el-form {
+      width: 85%;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .el-form {
+      width: 90%;
+      padding: 50px 0;
+    }
   }
 </style>

@@ -52,4 +52,10 @@ export default {
     }
   }
 }
+
+  @media (max-width: 600px) {
+    .rp-nav--links a:first-child {
+      display: none;
+    }
+  }
 </style>
