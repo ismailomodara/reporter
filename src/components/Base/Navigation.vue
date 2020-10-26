@@ -1,15 +1,16 @@
 <template>
   <div class="rp-navigation">
     <el-container>
-      <div class="rp-logo">
-        <span></span>
-        <p>Logo</p>
+      <router-link to="/">
+        <div class="rp-logo">
+          <span></span>
+          <p>Logo</p>
+        </div>
+      </router-link>
+      <div class="rp-nav--links">
+        <router-link :to="{ name: 'login'}"><el-button type="primary" plain class="is-white">Login</el-button></router-link>
+        <router-link :to="{ name: 'report'}"><el-button type="primary">Report A Case</el-button></router-link>
       </div>
-      <ul class="rp-nav--links">
-        <li>Link 1</li>
-        <li>Link 2</li>
-        <li>Link 3</li>
-      </ul>
     </el-container>
   </div>
 </template>
@@ -20,7 +21,6 @@ export default {
   data () {
     return {}
   },
-  computed: {},
   created () {},
   methods: {}
 }
@@ -36,41 +36,19 @@ export default {
   background: transparent;
   display: flex;
   align-items: center;
+  z-index: 99;
 
   .el-container {
     justify-content: space-between;
-  }
-
-  .rp-logo {
-    display: flex;
-    align-items: center;
-
-    span {
-      height: 50px;
-      width: 50px;
-      background: #000;
-      margin-right: 5px;
-    }
-
-    p {
-      font-weight: 600;
-    }
+    flex-direction: row !important;
   }
 
   .rp-nav--links {
     display: flex;
     align-items: center;
-    margin: 0;
-    padding: 0;
-    list-style: none;
 
-    li {
-      padding: 10px 20px;
-      color: #000000;
-
-      &:last-child {
-        padding-right: 0;
-      }
+    a:not(:last-child) {
+      margin-right: 20px;
     }
   }
 }

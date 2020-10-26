@@ -7,7 +7,6 @@
 
 <script>
 import Navigation from '../components/Base/Navigation.vue'
-
 export default {
   name: 'DefaultLayout',
   components: {

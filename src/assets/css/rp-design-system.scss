@@ -47,6 +47,7 @@ a, a:hover {
 
 .el-container {
   margin: auto;
+  flex-direction: column;
 }
 
 @media (min-width: 576px) {
@@ -306,6 +307,31 @@ a, a:hover {
   font-weight: 600;
   text-transform: uppercase;
   font-family: "IBM Plex Sans", sans-serif;
+
+  &.is-plain,
+  &.is-plain:focus {
+    background: transparent;
+    color: #000;
+    border-color: #000;
+    transition: all 0.25s ease-in;
+
+    &.is-white {
+      color: #fff;
+      border-color: #fff;
+    }
+
+    &:hover {
+      background: #00000020;
+      color: #000000;
+      transition: all 0.25s ease-out;
+
+      &.is-white {
+        background: #fff;
+        color: #000;
+        border-color: #fff;
+      }
+    }
+  }
 
   &:not(.el-button--small):not(.is-circle) {
     padding: 15px 40px;
